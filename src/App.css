@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,70 @@
   to {
     transform: rotate(360deg);
   }
+} */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to top, #ff97a1 0%, #ffe4d5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+.custom-form {
+  background-color: rgba(255, 255, 255, 0.7); /* Adjusted to be slightly transparent */
+  padding: 40px; /* Increased padding to increase height */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 100%; /* Adjusted width to occupy 60% of the page */
+  max-width: 600px;
+  display: flex; /* Apply flexbox */
+  flex-direction: column; /* Set flex direction to column */
+  align-items: center; /* Center items horizontally */
+}
+
+
+.input-group {
+  display: flex; /* Align label and input fields horizontally */
+  flex-direction: row; /* Set flex direction to row */
+  align-items: flex-start; /* Align items vertically */
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  width: 160px; /* Adjusted width for the labels /  / You can adjust this for a different width */
+  margin-right: 10px; /* Add spacing between label and input field */
+}
+
+.input-group input {  /* Removed ", .custom-form button" from the selector */
+  width: calc(100% - (160px + 10px));  /* Calculate width based on label width and spacing */
+  max-width: 300px; /* Limit maximum width for input fields */
+}
+
+  .custom-form button {  /* Style remains unchanged for buttons */
+    background-color: #c74237;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px 0;
+    width: 23%;
+  }
+
+.progress-bar {
+  width: calc(100% - 20px); /* Set progress bar width to 100% */
+  margin: 20px 0; /* Center the progress bar vertically */
+}
+
+
+
+
+
+
+
+
+
+   
+
+
