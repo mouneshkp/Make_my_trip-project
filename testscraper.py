@@ -7,7 +7,7 @@ import json
 import ssl
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app) 
 
 # Function to convert date string to epoch timestamp
 def date_to_epoch(date_string):
@@ -55,7 +55,7 @@ def submit_data():
         print(res)
         data = res.read()
         final= data.decode("utf-8")
-        print("data recived---------- ",final)
+        # print("data recived---------- ",final)
 
 
         # Assuming 'final' is a CSV string, you can split it into lines
@@ -78,7 +78,7 @@ def submit_data():
 
         # Convert the list of dictionaries to JSON
         json_data = csv_data
-        print(json_data)
+        # print(json_data)
 
         # Input collection name from the user
 
